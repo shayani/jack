@@ -1,5 +1,8 @@
 echo "Installing cli tools"
 sudo apt install -y \
   bat \
+  btop \
   eza \
-  tldr
+  ripgrep \
+  tldr \
+  zoxide
