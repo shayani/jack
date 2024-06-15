@@ -1,4 +1,4 @@
-sudo nala install -y zsh curl
+sudo apt install -y zsh curl
 
 rm -rf ~/.oh-my-zsh
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh -

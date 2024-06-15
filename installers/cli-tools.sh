@@ -1,5 +1,5 @@
 echo "Installing cli tools"
-sudo nala install -y \
+sudo apt install -y \
   bat \
-  exa \
+  eza \
   tldr

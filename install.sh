@@ -6,8 +6,7 @@ set -e
 
 # Needed for all installers
 sudo apt update -y
-sudo apt install -y nala
-sudo nala install -y curl git unzip
+sudo apt install -y curl git unzip gcc build-essential
 
 # Ensure computer doesn't go to sleep or lock while installing
 gsettings set org.gnome.desktop.screensaver lock-enabled false
@@ -19,7 +18,7 @@ for script in $(pwd)/installers/*.sh; do
 done
 
 # # Upgrade everything that might ask for a reboot last
-# sudo nala upgrade -y
+# sudo apt upgrade -y
 
 # # Revert to normal idle and lock settings
 gsettings set org.gnome.desktop.screensaver lock-enabled true

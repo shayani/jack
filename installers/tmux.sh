@@ -1,2 +1,1 @@
-echo "Installing tmux"
-sudo nala install -y tmux
+sudo apt install -y tmux
